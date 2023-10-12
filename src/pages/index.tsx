@@ -14,8 +14,12 @@ export default function Home() {
 			</Head>
 			<Main>
 				<Title>{title}</Title>
-				{sections.map((section) => (
-					<ComponentLoader fianceId={fianceId} {...section} />
+				{sections.map((section, index) => (
+					<ComponentLoader
+						key={section.type + '-' + index}
+						fianceId={fianceId}
+						{...section}
+					/>
 				))}
 			</Main>
 		</Container>

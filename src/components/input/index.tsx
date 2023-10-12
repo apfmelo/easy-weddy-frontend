@@ -1,4 +1,3 @@
-import { Field } from 'formik'
 import { InputWrapper, ErrorSpan, InputLabel, StyledField } from './styles'
 
 interface Props {

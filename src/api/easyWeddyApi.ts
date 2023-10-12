@@ -17,7 +17,5 @@ const params = {
 
 const easyWeddyApi = axios.create(params)
 
-export const login = async (data: any) => easyWeddyApi.post('/', data)
-
 export const updateGuest = async (guestId: string, data: IGuest) =>
 	easyWeddyApi.put(`/guests/${guestId}`, { data })

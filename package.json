@@ -20,15 +20,18 @@
 		"yup": "^1.0.2"
 	},
 	"devDependencies": {
+		"prettier": "^2.8.4",
+		"@typescript-eslint/eslint-plugin": "^6.7.5",
+		"eslint": "8.35.0",
+		"eslint-config-next": "13.2.3",
+		"eslint-plugin-prettier": "^5.0.1",
 		"@mui/icons-material": "^5.14.13",
 		"@mui/material": "^5.14.12",
-		"prettier": "^2.8.4",
 		"@types/node": "18.14.6",
 		"@types/react": "18.0.28",
 		"@types/react-dom": "18.0.11",
 		"@types/styled-components": "^5.1.26",
-		"eslint": "8.35.0",
-		"eslint-config-next": "13.2.3",
+		"eslint-config-prettier": "^9.0.0",
 		"typescript": "4.9.5"
 	}
 }

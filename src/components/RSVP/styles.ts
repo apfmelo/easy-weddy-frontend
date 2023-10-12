@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Formik, Form, FormikHelpers } from 'formik'
+import { Form } from 'formik'
 
 export const Container = styled.section`
 	padding: 2rem 0 3rem;
