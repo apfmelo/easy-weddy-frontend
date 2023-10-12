@@ -1,0 +1,44 @@
+{
+	"pageName": "homepage",
+	"fianceId": "joao-maria-2024",
+	"title": "Casamento João e Maria",
+	"sections": [
+		{
+			"type": "RSVPForm",
+			"title": "RSVP",
+			"button": "Enviar",
+			"alert": {
+				"success": "RSVP enviado! Muito obrigada!",
+				"error": "Erro inesperado! Por favor, tente novamente mais tarde!"
+			},
+			"name": {
+				"type": "text",
+				"label": "Nome completo*",
+				"placeholder": "Digite seu nome"
+			},
+			"email": {
+				"type": "email",
+				"label": "Email*",
+				"placeholder": "Digite seu email"
+			},
+			"isConfirmed": {
+				"type": "radio",
+				"label": "Vai comparecer ao casamento?*",
+				"options": [
+					{
+						"label": "Sim",
+						"value": "sim"
+					},
+					{
+						"label": "Não",
+						"value": "não"
+					}
+				]
+			},
+			"qtyCompanions": {
+				"type": "number",
+				"label": "Número de acompanhantes"
+			}
+		}
+	]
+}

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-	padding: 0 0.5rem;
+	padding: 0rem;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -16,6 +16,8 @@ const Main = styled.main`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 3rem;
+	width: 100%;
 `
 
 const Title = styled.h1`

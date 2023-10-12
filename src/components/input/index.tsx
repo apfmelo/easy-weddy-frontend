@@ -1,11 +1,11 @@
 import { Field } from 'formik'
-import { InputWrapper } from './styles'
+import { InputWrapper, ErrorSpan, InputLabel, StyledField } from './styles'
 
 interface Props {
 	label: string
 	id: string
 	name: string
-	placeholder: string
+	placeholder?: string
 	type: string
 	errors: { [x: string]: string }
 	touched: { [x: string]: boolean }
@@ -22,9 +22,9 @@ export const Input = ({
 }: Props) => {
 	return (
 		<InputWrapper>
-			<label htmlFor={id}>{label}</label>
-			<Field id={id} name={name} placeholder={placeholder} type={type} />
-			{errors[id] && touched[id] ? <span>{errors[id]}</span> : null}
+			<InputLabel htmlFor={id}>{label}</InputLabel>
+			<StyledField id={id} name={name} placeholder={placeholder} type={type} />
+			{errors[id] && touched[id] ? <ErrorSpan>{errors[id]}</ErrorSpan> : null}
 		</InputWrapper>
 	)
 }
